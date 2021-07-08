@@ -1,9 +1,9 @@
 /* -------------------------------------------
-Name:
-Student number:
-Email:
-Section:
-Date:
+Name: Carmela Isabel Rambacud
+Student number: 144524204
+Email: cerambacud@myseneca.ca
+Section: NEE
+Date: July 7, 2021
 ----------------------------------------------
 Assignment: 1
 Milestone:  4
@@ -12,7 +12,7 @@ Milestone:  4
 // Structure type Name declaration (Milestone 1)
 struct Name {
     char firstName[31];
-    char middleInitial[5];
+    char middleInitial[7]; // before: char middleInitial[5]; after: char middleInitial[7]; 
     char lastName[36];
 };
 

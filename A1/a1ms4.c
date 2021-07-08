@@ -1,9 +1,9 @@
 /* -------------------------------------------
-Name:
-Student number:
-Email:
-Section:
-Date:
+Name: Carmela Isabel Rambacud
+Student number: 144524204
+Email: cerambacud@myseneca.ca   
+Section: NEE
+Date: July 7, 2021
 ----------------------------------------------
 Assignment: 1
 Milestone:  4
