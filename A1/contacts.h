@@ -11,7 +11,7 @@ Milestone:  4
 
 // Structure type Name declaration (Milestone 1)
 struct Name {
-    char firstName[31];
+    char firstName[31]; 
     char middleInitial[7]; // before: char middleInitial[5]; after: char middleInitial[7]; 
     char lastName[36];
 };
@@ -21,7 +21,7 @@ struct Name {
 struct Address {
     int streetNumber;
     char street[41];
-    int apartmentNumber;
+    int apartmentNumber; 
     char postalCode[8];
     char city[41];
 };

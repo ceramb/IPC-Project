@@ -47,6 +47,7 @@ void clearKeyboard(void)
 void pause(void)
 {
     printf("(Press Enter to continue)");
+    printf(" \n");
     clearKeyboard();
 }
 

@@ -69,3 +69,5 @@ void getNumbers(struct Numbers* numbers);
 // |        function prototypes here...              |
 // +-------------------------------------------------+
 
+void getContact(struct Contact* contact);
+
