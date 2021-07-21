@@ -13,7 +13,6 @@
 
 #include <stdio.h>
 #include "contactHelpers.h"
-
 // This source file needs to "know about" the functions you prototyped
 // in the contact helper header file.
 // HINT: Put the header file name in double quotes so the compiler knows
@@ -123,6 +122,7 @@ int yes(void)
         return 1;
     else
         return 0;
+    return value;
 
 }
 
@@ -149,53 +149,62 @@ int menu(void)
 // contactManagerSystem: Empty function definition goes here:
 void contactManagerSystem(void)
 {
-    int value, tf;
+    int value;
+    int tf = 1;
+    char YesNo, clear = 0;
 
-    while (1)
-    {
+    do {
+
         value = menu();
-        tf = 2;
-        printf("\n");
-        switch (value)
-        {
-        case 1:
-            printf("<<< Feature 1 is unavailable >>>\n");
-            break;
-        case 2:
-            printf("<<< Feature 2 is unavailable >>>\n");
-            break;
-        case 3:
-            printf("<<< Feature 3 is unavailable >>>\n");
-            break;
-        case 4:
-            printf("<<< Feature 4 is unavailable >>>\n");
-            break;
-        case 5:
-            printf("<<< Feature 5 is unavailable >>>\n");
-            break;
-        case 6:
-            printf("<<< Feature 6 is unavailable >>>\n");
-            break;
-        case 0:
-            printf("Exit the program? (Y)es/(N)o: ");
-            tf = yes();
-            break;
-        }
-        if (tf == 1)
-        {
-            printf("\nContact Management System: terminated\n");
-            break;
-        }
-        else if (tf == 0)
-        {
-            printf("\n");
-            continue;
-        }
-        else
-        {
-            printf("\n");
+        if (value == 1) {
+            printf("\n<<< Feature 1 is unavailable >>>\n\n");
             pause();
+            printf("\n");
         }
-    }
+
+        else if (value == 2) {
+            printf("\n<<< Feature 2 is unavailable >>>\n\n");
+            pause();
+            printf("\n");
+        }
+
+        else if (value == 3) {
+            printf("\n<<< Feature 3 is unavailable >>>\n\n");
+            pause();
+            printf("\n");
+        }
+
+        else if (value == 4) {
+            printf("\n<<< Feature 4 is unavailable >>>\n\n");
+            pause();
+            printf("\n");
+        }
+
+        else if (value == 5) {
+            printf("\n<<< Feature 5 is unavailable >>>\n\n");
+            pause();
+            printf("\n");
+        }
+
+        else if (value == 6) {
+            printf("\n<<< Feature 6 is unavailable >>>\n\n");
+            pause();
+            printf("\n");
+        }
+
+        else if (value == 0) {
+            printf("\nExit the program? (Y)es/(N)o: ");
+            scanf(" %c%c", &YesNo, &clear);
+            printf("\n");
+            if (YesNo == 'Y' || YesNo == 'y') {
+                printf("Contact Management System: terminated\n");
+                tf = 0;
+            }
+        }
+        else {
+            tf = 0;
+        }
+
+    } while (tf == 1);
 
 }
